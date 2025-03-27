@@ -1,6 +1,7 @@
+require('dotenv').config();
 const { MongoClient } = require("mongodb");
 
-const uri = "mongodb+srv://cheersaman1:Welcome2amanadi1@cluster0.ldjn74m.mongodb.net/?retryWrites=true&w=majority";
+const uri = process.env.MONGO_URI; // Securely load URI from .env
 
 const client = new MongoClient(uri);
 
