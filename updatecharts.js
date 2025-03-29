@@ -280,7 +280,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         updateCustomerDistribution(sampleData);
-    }, 100); // 🔥 Delay execution for 1s to ensure elements exist
+    }, 500); // 🔥 Delay execution for 1s to ensure elements exist
 });
 
 
