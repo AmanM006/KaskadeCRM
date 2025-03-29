@@ -1,6 +1,6 @@
 async function updateDashboardStats() {
     try {
-        const response = await fetch("http://localhost:5000/api/users"); // Fetch from backend
+        const response = await fetch("https://kaskadebackend.onrender.com/api/users");
         const customers = await response.json();
 
         // Calculate stats based on correct key names
