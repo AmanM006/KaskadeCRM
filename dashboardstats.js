@@ -21,4 +21,4 @@ async function updateDashboardStats() {
 
 // Call function on page load and refresh every 10 seconds
 document.addEventListener("DOMContentLoaded", updateDashboardStats);
-setInterval(updateDashboardStats, 1000); // Refresh stats every 10 seconds
+setInterval(updateDashboardStats, 500); // Refresh stats every 10 seconds
