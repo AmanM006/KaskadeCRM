@@ -263,62 +263,55 @@
             
 
             <div class="charts-container">
-                <div class="chart-card">
-                    <div class="chart-title">Monthly Loyalty Score Trends</div>
-                    <div class="chart">
-                        <div class="chart-bar" style="height: 60%;">
-                            <div class="chart-value">75</div>
-                            <div class="chart-label">Jan</div>
-                        </div>
-                        <div class="chart-bar" style="height: 72%;">
-                            <div class="chart-value">82</div>
-                            <div class="chart-label">Feb</div>
-                        </div>
-                        <div class="chart-bar" style="height: 68%;">
-                            <div class="chart-value">78</div>
-                            <div class="chart-label">Mar</div>
-                        </div>
-                        <div class="chart-bar" style="height: 75%;">
-                            <div class="chart-value">84</div>
-                            <div class="chart-label">Apr</div>
-                        </div>
-                        <div class="chart-bar" style="height: 80%;">
-                            <div class="chart-value">86</div>
-                            <div class="chart-label">May</div>
-                        </div>
-                        <div class="chart-bar" style="height: 77%;">
-                            <div class="chart-value">85</div>
-                            <div class="chart-label">Jun</div>
-                        </div>
+                <!-- Monthly Loyalty Score Trends -->
+                <div class="chart-card full-width">
+                    <div class="chart-title">Monthly Purchases by Loyal Customers</div>
+                    <div class="chart" id="loyaltyChart">
+                        <!-- Bars will be dynamically inserted here -->
                     </div>
                 </div>
-
-                <div class="chart-card">
+                
+                <!-- Customer Distribution Chart -->
+                <div class="chart-card full-width">
                     <div class="chart-title">Customer Distribution</div>
                     <div class="distribution-chart">
                         <div class="donut-chart">
                             <div class="donut-hole">
-                                <div class="total-count">1,254</div>
+                                <div class="total-count">0</div>
                                 <div class="total-label">Customers</div>
                             </div>
                         </div>
                         <div class="chart-legend">
                             <div class="legend-item">
                                 <div class="legend-color legend-loyal"></div>
-                                <div class="legend-label">Loyal <span class="legend-value">65%</span></div>
+                                <div class="legend-label">
+                                    Loyal <span class="legend-value">0%</span>
+                                </div>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color legend-regular"></div>
+                                <div class="legend-label">
+                                    Regular <span class="legend-value">0%</span>
+                                </div>
                             </div>
                             <div class="legend-item">
                                 <div class="legend-color legend-at-risk"></div>
-                                <div class="legend-label">At-Risk <span class="legend-value">20%</span></div>
+                                <div class="legend-label">
+                                    At-Risk <span class="legend-value">0%</span>
+                                </div>
                             </div>
                             <div class="legend-item">
                                 <div class="legend-color legend-churned"></div>
-                                <div class="legend-label">Churned <span class="legend-value">15%</span></div>
+                                <div class="legend-label">
+                                    Churned <span class="legend-value">0%</span>
+                                </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
             </div>
+            
 
             <!-- Rest of the HTML remains the same -->
             <!-- Customer Table -->
@@ -430,6 +423,8 @@ fetchUsers().then(() => applyLoyaltyStyles());
     <script src="export.js"></script>
     <script src="pagination.js"></script>
     <script src="dashboardstats.js"></script>
+    <script src="updatecharts.js"></script>
+    <script src="chart.js"></script>
 
 </body>
 
