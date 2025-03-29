@@ -342,7 +342,7 @@
                     <script>
                         async function fetchUsers() {
     try {
-        const response = await fetch("https://kaskadebackend.onrender.com/api/users");
+        const response = await fetch("https://kaskadebackend-production.up.railway.app/api/users");
         const users = await response.json(); // Convert response to JSON
 
         const tableBody = document.querySelector(".customer-table tbody");
