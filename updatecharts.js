@@ -1,7 +1,7 @@
 async function fetchTotalUsers() {
     try {
         console.log("📡 Fetching total users...");
-        const response = await fetch("https://kaskadebackend.onrender.com/api/users");
+        const response = await fetch("https://kaskadebackend-production.up.railway.app/api/users");
 
         if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
 
@@ -69,7 +69,7 @@ function renderLoyaltyScoreChart(loyaltyTrends) {
 async function fetchLoyaltyPurchases() {
     try {
         console.log("📡 Fetching loyalty purchases...");
-        const response = await fetch("https://kaskadebackend.onrender.com/api/data");
+        const response = await fetch("https://kaskadebackend-production.up.railway.app/api/data");
 
         if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
 
